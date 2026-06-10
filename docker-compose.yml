@@ -9,7 +9,7 @@ services:
     image: nginx:alpine
     container_name: bbs-frontend
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./dist:/usr/share/nginx/html:ro
